@@ -327,7 +327,7 @@ a:focus {
 
 .header h1 {
     color: #222222;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: 700;
 }
 
@@ -335,7 +335,7 @@ a:focus {
     display: inline-block;
     margin: 0;
     height: 25px;
-    font-size: 25px;
+    font-size: 5vw;
 }
 
 .header .typed-text {
