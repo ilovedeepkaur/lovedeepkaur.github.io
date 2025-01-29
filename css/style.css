@@ -373,7 +373,7 @@ a:focus {
 }
 
 .large-btn .btn::after {
-    position: absolute;
+    position: relative;
     content: "";
     width: 0;
     height: 100%;
