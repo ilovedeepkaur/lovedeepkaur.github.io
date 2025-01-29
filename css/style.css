@@ -356,7 +356,7 @@ a:focus {
 .large-btn .btn {
     position: relative;
     width: 33.33%;
-    max-width: 100%;
+    max-width: auto;
     padding: 15px 0;
     color: #FF6F61;
     font-size: 15vw;
