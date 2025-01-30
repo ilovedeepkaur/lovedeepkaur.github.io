@@ -335,18 +335,13 @@ a:focus {
 }
 
 .header h1 {
-    color: #222222;
     font-size: 2rem;
-    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 10px;
 }
 
 .header h2 {
-    display: inline-block;
-    margin: 0;
     font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .header .typed-text {
