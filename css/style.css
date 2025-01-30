@@ -313,17 +313,9 @@ a:focus {
 }
 
 .header .content-inner {
-    padding: 60px 30px;
-    background: url(../img/profile.png) right center no-repeat;
+    padding: 100px 30px;
+    background: url(../img/profile.png) right bottom no-repeat;
     background-size: contain;
-    min-height: 400px; /* Minimum height to contain image */
-}
-
-.header .text-container {
-    max-width: 600px;
-    padding-right: 35%;
-    position: relative;
-    z-index: 1;
 }
 
 .header p {
@@ -335,21 +327,19 @@ a:focus {
 
 .header h1 {
     color: #222222;
-    font-size: clamp(2rem, 8vw, 4rem); /* Responsive scaling with limits */
+    font-size: 5vw;
     font-weight: 700;
-    line-height: 1;
-    white-space: nowrap; /* Prevent line break */
-    margin: 15px 0;
 }
 
 .header h2 {
-    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0;
+    height: 25px;
+    font-size: 25px;
 }
 
 .header .typed-text {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    display: block;
-    margin-top: 15px;
+    display: none;
 }
 
 .header .typed-cursor {
@@ -357,7 +347,6 @@ a:focus {
     font-weight: 300;
     color: #222222;
 }
-
 
 /* Mobile Adjustments */
 @media (max-width: 992px) {
