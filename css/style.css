@@ -313,21 +313,18 @@ a:focus {
 }
 
 .header .content-inner {
-    padding: 60px 15px;
+    padding: 40px 15px;
     background: url(../img/profile.png) right center no-repeat;
     background-size: contain;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: auto; /* Remove fixed height */
+    display: block; /* Change from flex to block */
     position: relative;
 }
 
 .header .text-container {
     max-width: 600px;
-    position: relative;
-    z-index: 1;
-    padding-right: 40%; /* Space for image */
+    padding-right: 45%; /* Reduced from 40% */
+    min-height: 300px; /* Set minimum height instead of full viewport */
 }
 
 .header p {
@@ -339,16 +336,16 @@ a:focus {
 
 .header h1 {
     color: #222222;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .header h2 {
     display: inline-block;
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -363,52 +360,49 @@ a:focus {
 }
 
 
-/* Responsive Adjustments */
+/* Mobile Optimization */
 @media (min-width: 768px) {
     .header .content-inner {
-        padding: 100px 30px;
+        padding: 60px 30px;
     }
     
     .header h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     
     .header h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 767px) {
     .header .content-inner {
-        background-size: 300px auto;
-        background-position: right bottom;
+        background-size: 250px auto;
+        padding: 40px 15px;
     }
     
     .header .text-container {
         padding-right: 0;
-        padding-bottom: 300px; /* Space for mobile image */
+        padding-bottom: 260px; /* Reduced from 300px */
+        min-height: auto;
     }
     
     .header h1 {
-        font-size: 2rem;
-    }
-    
-    .header h2 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 }
 
 @media (max-width: 480px) {
     .header .content-inner {
-        background-size: 250px auto;
+        background-size: 200px auto;
     }
     
     .header .text-container {
-        padding-bottom: 250px;
+        padding-bottom: 220px;
     }
     
     .header h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
 
