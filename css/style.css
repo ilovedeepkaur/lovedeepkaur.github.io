@@ -348,56 +348,19 @@ a:focus {
     color: #222222;
 }
 
-/* Mobile Adjustments */
-@media (max-width: 992px) {
-    .header .content-inner {
-        padding: 40px 15px;
-        min-height: 300px;
-        background-position: right bottom;
-    }
-    
-    .header h1 {
-        font-size: clamp(1.75rem, 8vw, 3rem);
-    }
-}
-
-@media (max-width: 768px) {
-    .header .content-inner {
-        background-size: 300px auto;
-    }
-    
-    .header .text-container {
-        padding-right: 0;
-        padding-bottom: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header .content-inner {
-        background-size: 250px auto;
-        min-height: 250px;
-    }
-    
-    .header h1 {
-        font-size: clamp(1.5rem, 7vw, 2.5rem);
-    }
-}
-
-
 .large-btn .content-inner {
-    display: flex;
-    justify-content: space-between; /* Distributes space evenly between buttons */
+    font-size: 0;
     border-bottom: 30px solid #F6D155;
 }
 
 .large-btn .btn {
-    flex: 1; /* Each button takes equal width */
+    position: relative;
+    width: 33.33%;
     padding: 15px 0;
     color: #FF6F61;
-    font-size: 15px;
+    font-size: 20px;
     background: #222222;
     border-radius: 0;
-    /* Remove the width: 33.33%; */
 }
 
 .large-btn .btn:last-child {
@@ -405,12 +368,12 @@ a:focus {
     background: #FF6F61;
 }
 
-.large-btn .btn:not(:last-child) {
-    margin-right: 0; /* Remove any margin between buttons if present */
+.large-btn .btn i {
+    margin-right: 8px;
 }
 
 .large-btn .btn::after {
-    position: fixed;
+    position: absolute;
     content: "";
     width: 0;
     height: 100%;
