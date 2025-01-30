@@ -335,7 +335,7 @@ a:focus {
     display: inline-block;
     margin: 0;
     height: 25px;
-    font-size: 25px;
+    font-size: 5vw;
 }
 
 .header .typed-text {
