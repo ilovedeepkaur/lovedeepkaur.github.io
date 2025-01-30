@@ -358,7 +358,7 @@ a:focus {
     width: 33.33%;
     padding: 15px 0;
     color: #FF6F61;
-    font-size: 5vw;
+    font-size: 15px;
     background: #222222;
     border-radius: 0;
 }
@@ -373,7 +373,7 @@ a:focus {
 }
 
 .large-btn .btn::after {
-    position: relative;
+    position: fixed;
     content: "";
     width: 0;
     height: 100%;
