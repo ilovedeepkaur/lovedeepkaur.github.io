@@ -349,18 +349,19 @@ a:focus {
 }
 
 .large-btn .content-inner {
-    font-size: 0;
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between buttons */
     border-bottom: 30px solid #F6D155;
 }
 
 .large-btn .btn {
-    position: relative;
-    width: 33.33%;
+    flex: 1; /* Each button takes equal width */
     padding: 15px 0;
     color: #FF6F61;
     font-size: 15px;
     background: #222222;
     border-radius: 0;
+    /* Remove the width: 33.33%; */
 }
 
 .large-btn .btn:last-child {
@@ -368,8 +369,8 @@ a:focus {
     background: #FF6F61;
 }
 
-.large-btn .btn i {
-    margin-right: 8px;
+.large-btn .btn:not(:last-child) {
+    margin-right: 0; /* Remove any margin between buttons if present */
 }
 
 .large-btn .btn::after {
